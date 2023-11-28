@@ -10,13 +10,15 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="container">
+        <MainPage />
         <Routes>
-          <Route path="/" exact element={<MainPage />}/>
-          <Route path='/townInformation' element={<TownInformation />}/>
+          <Route path='/' exact element={<TownInformation />}/>
           <Route path='/mostPlace' element={<MostPlace />}/>
           <Route path='/otherPlaces' element={<OtherPlaces />}/>
           <Route path='/townPhotos' element={<TownPhotos />}/>    
-        </Routes>       
+        </Routes>
+        </div>        
       </div>
     </Router>
     
